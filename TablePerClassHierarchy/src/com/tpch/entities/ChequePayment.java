@@ -1,6 +1,6 @@
 package com.tpch.entities;
 
-public class Cheque_Payment extends Payment{
+public class ChequePayment extends Payment{
 	
 	protected String chequeNo;
 	protected String bankName;

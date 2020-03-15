@@ -1,9 +1,9 @@
 package com.tpch.entities;
 
-public class Digital_Payment extends Payment {
+public class DigitalPayment extends Payment {
 
 	protected String txNo;
-	protected String partnerNo;
+	protected String partnerName;
 	protected String remarks;
 	public String getTxNo() {
 		return txNo;
@@ -11,11 +11,11 @@ public class Digital_Payment extends Payment {
 	public void setTxNo(String txNo) {
 		this.txNo = txNo;
 	}
-	public String getPartnerNo() {
-		return partnerNo;
+	public String getPartnerName() {
+		return partnerName;
 	}
-	public void setPartnerNo(String partnerNo) {
-		this.partnerNo = partnerNo;
+	public void setPartnerName(String partnerNo) {
+		this.partnerName = partnerNo;
 	}
 	public String getRemarks() {
 		return remarks;
@@ -25,7 +25,7 @@ public class Digital_Payment extends Payment {
 	}
 	@Override
 	public String toString() {
-		return "Digital_Payment [txNo=" + txNo + ", partnerNo=" + partnerNo + ", remarks=" + remarks + "]";
+		return "Digital_Payment [txNo=" + txNo + ", partnerName=" + partnerName + ", remarks=" + remarks + "]";
 	}
 	
 }

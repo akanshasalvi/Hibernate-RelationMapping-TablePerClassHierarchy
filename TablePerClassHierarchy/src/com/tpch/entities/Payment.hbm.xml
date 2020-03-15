@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tpch.entities">
+	<class name="Payment" table="payment" discriminator-value="cash">
+		<id name="payment_no" column="payment_no">
+			<generator class="increment" />
+		</id>
+		<discriminator column="payment_type"/>
+		<property name="paymentDate" column = "payment_Date" />
+		<property name="description" />
+		<property name="amount" />
+	</class>
+</hibernate-mapping>

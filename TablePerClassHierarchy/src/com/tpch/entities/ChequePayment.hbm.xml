@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<subclass name="ChequePayment" extends="Payment"
+		discriminator-value="cheque">
+		<property name="chequeNo" column="cheque_No" />
+		<property name="bankName" column = "bank_Name" />
+		<property name="branchName" column = "branch_Name" />
+		<property name="ifscCode" column = "ifsc_Code"/>
+	</subclass>
+</hibernate-mapping>
