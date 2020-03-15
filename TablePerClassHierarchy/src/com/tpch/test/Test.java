@@ -61,9 +61,8 @@ public class Test {
 			cheque = (ChequePayment)session.get(ChequePayment.class, 2);
 			System.out.println(cheque);
 			
-			/*digital = session.get(DigitalPayment.class, 3);
+			digital = session.get(DigitalPayment.class, 3);
 			System.out.println(digital);
-			*/
 			
 			flag = true;
 		} finally {
